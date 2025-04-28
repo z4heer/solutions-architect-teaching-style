@@ -1,0 +1,126 @@
+# Big-Picture Driven Teaching Template (Advanced Version)
+
+## Subject: **IDEs: Eclipse, Visual Studio, PyCharm**
+
+---
+
+## 1. Introduction to IDEs
+- **Definition**: IDE (Integrated Development Environment) simplifies coding, debugging, and deployment.
+- **Big Picture Use**: IDEs accelerate software development by integrating tools like code editors, compilers, debuggers, and build automation.
+- **Interconnection**: IDEs interact with VCS (Git), build tools (Maven/Gradle), cloud services (AWS, Azure), and CI/CD pipelines.
+
+---
+
+## 2. Architectural Context Diagram
+
+```
++---------------+         +---------------+        +---------------+
+|    Developer  |  --->   |      IDE       |  --->  |    Ecosystem   |
+| (Writes Code) |         | (Eclipse/VS/PyCharm)     |(Git, Docker, Cloud)
++---------------+         +---------------+        +---------------+
+```
+
+---
+
+## 3. Main Modules / Sub-features
+
+| Area                     | Eclipse                              | Visual Studio                         | PyCharm                                 |
+|---------------------------|--------------------------------------|---------------------------------------|----------------------------------------|
+| **Project Management**    | Workspaces, Projects, Build Paths    | Solution Explorer, Projects           | Project Structure, Virtualenv          |
+| **Code Editing**          | Syntax Highlighting, Auto-complete   | IntelliSense, Live Share              | Code Completion, Live Templates        |
+| **Debugging**             | Breakpoints, Step Execution          | Debug Console, Visual Debugging       | Debugger, Attach to Process             |
+| **Version Control**       | Git Integration, SVN Plugins         | Git, Azure DevOps Extensions          | Git Integration, Github, Bitbucket     |
+| **Build/Run**             | Maven/Gradle Integration             | Build Tools, .NET CLI                 | Python Interpreter, Run Configurations |
+| **Testing**               | JUnit, TestNG                        | MSTest, xUnit, NUnit                  | pytest, unittest integration            |
+| **Extensions**            | Marketplace, Plugins                 | Marketplace, Extensions               | Plugins Repository                      |
+| **Cloud Integration**     | AWS Toolkit, Azure Integration       | Azure Development Tools               | AWS Toolkit, GCP Plugin                 |
+
+---
+
+## 4. Key Technical Words & Definitions
+
+| Term              | Definition |
+|-------------------|------------|
+| Workspace         | Collection of projects and settings in Eclipse |
+| IntelliSense      | Code suggestions and completion in Visual Studio |
+| Virtual Environment | Isolated Python environment for dependency management in PyCharm |
+| Debugging         | Finding and fixing errors in code |
+| Extension         | Additional plugins or functionality added to IDE |
+| Linting           | Checking code for potential errors without running it |
+| Breakpoint        | Pausing code execution at a specific point during debugging |
+| Build Automation  | Automatically compile and package code into executable format |
+
+---
+
+## 5. Common Interview Questions
+- What are workspaces in Eclipse?
+- How does IntelliSense improve developer productivity?
+- What are the advantages of using Virtual Environments in PyCharm?
+- Compare Maven integration in Eclipse vs Visual Studio.
+- How can you integrate GitHub with your IDE?
+
+---
+
+## 6. Code Snippet Examples
+
+**Eclipse: Maven build file snippet (pom.xml)**
+```xml
+<dependencies>
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+  </dependency>
+</dependencies>
+```
+
+**Visual Studio: C# Program.cs example**
+```csharp
+using System;
+class Program
+{
+    static void Main() => Console.WriteLine("Hello World!");
+}
+```
+
+**PyCharm: Python simple script**
+```python
+def greet(name):
+    print(f"Hello, {name}!")
+
+if __name__ == "__main__":
+    greet("World")
+```
+
+---
+
+## 7. Best Practices Summary
+- Keep your IDE updated.
+- Use version control plugins natively.
+- Learn keyboard shortcuts to boost productivity.
+- Isolate environment-specific configurations.
+- Integrate with build tools and cloud early.
+
+---
+
+## 8. Cheat Sheet Summary
+
+| Feature                  | Eclipse        | Visual Studio | PyCharm        |
+|---------------------------|----------------|---------------|----------------|
+| New Project               | Ctrl+N         | Ctrl+Shift+N  | Ctrl+Alt+Shift+S |
+| Run Project               | Ctrl+F11       | Ctrl+F5       | Shift+F10      |
+| Debug Project             | F11            | F5            | Shift+F9       |
+| Git Pull/Push             | Team -> Pull   | Git -> Pull   | VCS -> Git -> Pull |
+
+---
+
+## 9. Common Mistakes to Avoid
+- Mismanaging workspace paths.
+- Overloading the IDE with unnecessary plugins.
+- Ignoring Git/branch management inside the IDE.
+- Not using built-in debugging tools.
+- Poor configuration of build systems (Maven/Gradle).
+
+---
+
+## 10. Final Big Picture
+> "An IDE is not just a code editor. It's your complete digital workspace enabling you to build, debug, test, deploy, and collaborate efficiently." 🚀
