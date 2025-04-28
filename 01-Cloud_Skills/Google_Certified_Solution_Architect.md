@@ -1,5 +1,3 @@
-01-Cloud_Skills/Google_Certified_Solution_Architect.md
-
 ## 1. Big Picture Introduction
 | Certification | Primary Focus | Target Audience | Strengths | Weaknesses |
 |:--------------|:--------------|:----------------|:----------|:-----------|
