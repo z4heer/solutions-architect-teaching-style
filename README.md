@@ -170,7 +170,7 @@ if __name__ == '__main__':
 ---
 
 # 🔥 Mind Map Sketch
-```
+
 Python (Applications) 
   → Backend Development
   → Data Science
